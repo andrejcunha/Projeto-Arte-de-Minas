@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arte de Minas - Catálogo</title>
+</head>
+<body>
+    <header>
+        <div id="topo">
+            <img src="images/logo1.jpg" alt="Logo da loja"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO E ORÇAMENTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Catálogo de Produtos</h1>
+        <div id="category-buttons">
+            <button id="btnLacos">Laços</button>
+            <button id="btnCatalogo">Catalogo de Laços</button>
+            <button id="btnFlorzinhas">Florzinhas</button>
+            <button id="btnBorboletinhas">Borboletinhas</button>
+        </div>
+        <section id="catalogo">
+            <ul id="produtos" class="produtos__lista">
+                <!-- Produtos serão injetados aqui via JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Produto">
+            <div id="modalDescription" class="modal-description"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <a href="https://wa.me/32984140704" target="_blank" class="footer-link">
+                <img src="images/zap.png" alt="WhatsApp" class="footer-icon"/>
+                (32) 98414-0704
+            </a>
+            <a href="https://www.instagram.com/arte.de.minas" target="_blank" class="footer-link instagram">
+                <img src="images/inst.png" alt="Instagram" class="footer-icon"/>
+                @arte.de.minas
+            </a>
+            <p>Rua Hilda Maria Fortes S/N - Leopoldina MG.</p>
+            <p>&copy; Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
