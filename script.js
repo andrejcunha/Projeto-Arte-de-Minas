@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Alternar o menu no mobile
-      const menuButton = document.getElementById('menu-button');
+    const menuButton = document.getElementById('menu-button');
     const navMenu = document.getElementById('nav-menu');
 
     menuButton.addEventListener('click', function() {
