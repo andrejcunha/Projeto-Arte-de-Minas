@@ -101,8 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const navMenu = document.getElementById('nav-menu');
 
-    menuButton.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
+    if (menuButton && navMenu) {
+        menuButton.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    } else {
+        console.error('Menu button or nav menu not found');
+    }
     });
 
     // Tornar a função loadProducts globalmente acessível
