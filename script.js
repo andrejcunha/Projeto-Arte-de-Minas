@@ -98,16 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Alternar o menu no mobile
-    const menuButton = document.getElementById('menu-button');
+      const menuButton = document.getElementById('menu-button');
     const navMenu = document.getElementById('nav-menu');
 
-    if (menuButton && navMenu) {
-        menuButton.addEventListener('click', () => {
-            navMenu.classList.toggle('show');
-        });
-    } else {
-        console.error('Menu button or nav menu not found');
-    }
+    menuButton.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
     });
 
     // Tornar a função loadProducts globalmente acessível
