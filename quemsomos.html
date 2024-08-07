@@ -7,14 +7,22 @@
     <title>Arte de Minas - Quem Somos</title>
 </head>
 <body>
+    <div id="topo">
+        <img src="images/logo1.jpg" alt="Logo da loja"/>
+    </div>
     <header>
-        <div id="topo">
-            <img src="images/logo1.jpg" alt="Logo da loja"/>
-        </div>
         <nav>
-            <ul>
+            <!-- Botão do menu visível apenas em dispositivos móveis -->
+            <div class="menu-toggle">
+                <button id="menu-button" aria-label="Abrir menu">
+                    <img src="images/icon.png" alt="Menu">
+                </button>
+            </div>
+            <!-- Menu padrão visível em desktops -->
+            <ul id="nav-menu">
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="catalogo.html">CATÁLOGO DE PRODUTOS</a></li>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
                 <li><a href="contato.html">CONTATO E ORÇAMENTOS</a></li>
             </ul>
         </nav>
